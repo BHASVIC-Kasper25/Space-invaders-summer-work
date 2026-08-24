@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://drw3lfqf3vyer"]
+
+[ext_resource type="Script" uid="uid://dc82q8imutinb" path="res://Code/Alien.cs" id="1_nm7cd"]
+[ext_resource type="Texture2D" uid="uid://cqgr2dmyia67" path="res://Assets/alien.png" id="1_wweve"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nm7cd"]
+radius = 1.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nm7cd"]
+size = Vector2(41, 25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7cbid"]
+size = Vector2(40, 118)
+
+[node name="Alien" type="CharacterBody2D" unique_id=2070447262]
+script = ExtResource("1_nm7cd")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1522025625]
+position = Vector2(-1, 0)
+texture = ExtResource("1_wweve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=95207790]
+shape = SubResource("CircleShape2D_nm7cd")
+
+[node name="Collssion" type="Area2D" parent="." unique_id=834843695]
+position = Vector2(-1, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collssion" unique_id=1294827182]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_nm7cd")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=140395432]
+position = Vector2(-3, 132)
+
+[node name="Detection" type="CollisionShape2D" parent="Area2D" unique_id=1776364190]
+position = Vector2(2, -60)
+shape = SubResource("RectangleShape2D_7cbid")
+debug_color = Color(0.72346336, 0.4769715, 0.076764025, 0.41960785)
+
+[connection signal="body_entered" from="Collssion" to="." method="laserEntered"]
+[connection signal="body_entered" from="Area2D" to="." method="alienEntered"]

@@ -1,0 +1,179 @@
+[gd_scene format=3 uid="uid://q2i04xcq1mx8"]
+
+[ext_resource type="Texture2D" uid="uid://c5e27tnqfx32v" path="res://Assets/Background.jpg" id="1_5kiuu"]
+[ext_resource type="Script" uid="uid://dev2i5bu45ohw" path="res://Code/Game.cs" id="1_p1ry8"]
+[ext_resource type="PackedScene" uid="uid://drw3lfqf3vyer" path="res://scene/alien.tscn" id="2_dbls1"]
+[ext_resource type="PackedScene" uid="uid://op7iyb5s6khm" path="res://scene/player.tscn" id="3_33cqm"]
+[ext_resource type="PackedScene" uid="uid://c0p5it7lev001" path="res://scene/base.tscn" id="4_xwcet"]
+
+[node name="Game" type="Node2D" unique_id=2070682059]
+script = ExtResource("1_p1ry8")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1242935581]
+position = Vector2(573, 322)
+scale = Vector2(1.037037, 1.037037)
+texture = ExtResource("1_5kiuu")
+
+[node name="Enemies" type="Node2D" parent="." unique_id=921412799]
+position = Vector2(-27, -82)
+
+[node name="Alien1" parent="Enemies" unique_id=2070447262 instance=ExtResource("2_dbls1")]
+position = Vector2(138, 113)
+
+[node name="Alien2" parent="Enemies" unique_id=139633457 instance=ExtResource("2_dbls1")]
+position = Vector2(232, 113)
+
+[node name="Alien3" parent="Enemies" unique_id=378823100 instance=ExtResource("2_dbls1")]
+position = Vector2(310, 113)
+
+[node name="Alien4" parent="Enemies" unique_id=1447235884 instance=ExtResource("2_dbls1")]
+position = Vector2(404, 113)
+
+[node name="Alien5" parent="Enemies" unique_id=1818120656 instance=ExtResource("2_dbls1")]
+position = Vector2(485, 113)
+
+[node name="Alien6" parent="Enemies" unique_id=1891631852 instance=ExtResource("2_dbls1")]
+position = Vector2(579, 113)
+
+[node name="Alien7" parent="Enemies" unique_id=434288677 instance=ExtResource("2_dbls1")]
+position = Vector2(831, 113)
+
+[node name="Alien8" parent="Enemies" unique_id=1962164974 instance=ExtResource("2_dbls1")]
+position = Vector2(921, 113)
+
+[node name="Alien9" parent="Enemies" unique_id=1611015652 instance=ExtResource("2_dbls1")]
+position = Vector2(659, 113)
+
+[node name="Alien10" parent="Enemies" unique_id=1176859222 instance=ExtResource("2_dbls1")]
+position = Vector2(753, 113)
+
+[node name="Alien11" parent="Enemies" unique_id=1239935218 instance=ExtResource("2_dbls1")]
+position = Vector2(1089, 114)
+
+[node name="Alien12" parent="Enemies" unique_id=1124499096 instance=ExtResource("2_dbls1")]
+position = Vector2(1005, 112)
+
+[node name="Alien13" parent="Enemies" unique_id=104426371 instance=ExtResource("2_dbls1")]
+position = Vector2(139, 199)
+
+[node name="Alien14" parent="Enemies" unique_id=138976837 instance=ExtResource("2_dbls1")]
+position = Vector2(233, 199)
+
+[node name="Alien15" parent="Enemies" unique_id=762077798 instance=ExtResource("2_dbls1")]
+position = Vector2(311, 199)
+
+[node name="Alien16" parent="Enemies" unique_id=462251249 instance=ExtResource("2_dbls1")]
+position = Vector2(405, 199)
+
+[node name="Alien17" parent="Enemies" unique_id=422648474 instance=ExtResource("2_dbls1")]
+position = Vector2(486, 199)
+
+[node name="Alien18" parent="Enemies" unique_id=987553901 instance=ExtResource("2_dbls1")]
+position = Vector2(580, 199)
+
+[node name="Alien19" parent="Enemies" unique_id=1920767911 instance=ExtResource("2_dbls1")]
+position = Vector2(832, 199)
+
+[node name="Alien20" parent="Enemies" unique_id=2007842061 instance=ExtResource("2_dbls1")]
+position = Vector2(922, 199)
+
+[node name="Alien21" parent="Enemies" unique_id=1581159907 instance=ExtResource("2_dbls1")]
+position = Vector2(660, 199)
+
+[node name="Alien22" parent="Enemies" unique_id=1970531442 instance=ExtResource("2_dbls1")]
+position = Vector2(754, 199)
+
+[node name="Alien23" parent="Enemies" unique_id=985206983 instance=ExtResource("2_dbls1")]
+position = Vector2(1086, 197)
+
+[node name="Alien24" parent="Enemies" unique_id=1434807449 instance=ExtResource("2_dbls1")]
+position = Vector2(1006, 198)
+
+[node name="Alien25" parent="Enemies" unique_id=137160514 instance=ExtResource("2_dbls1")]
+position = Vector2(138, 282)
+
+[node name="Alien26" parent="Enemies" unique_id=153499414 instance=ExtResource("2_dbls1")]
+position = Vector2(232, 282)
+
+[node name="Alien27" parent="Enemies" unique_id=1374870161 instance=ExtResource("2_dbls1")]
+position = Vector2(310, 282)
+
+[node name="Alien28" parent="Enemies" unique_id=1745862242 instance=ExtResource("2_dbls1")]
+position = Vector2(404, 282)
+
+[node name="Alien29" parent="Enemies" unique_id=1599688234 instance=ExtResource("2_dbls1")]
+position = Vector2(485, 282)
+
+[node name="Alien30" parent="Enemies" unique_id=1428051289 instance=ExtResource("2_dbls1")]
+position = Vector2(579, 282)
+
+[node name="Alien31" parent="Enemies" unique_id=454379975 instance=ExtResource("2_dbls1")]
+position = Vector2(831, 282)
+
+[node name="Alien32" parent="Enemies" unique_id=1421891218 instance=ExtResource("2_dbls1")]
+position = Vector2(921, 282)
+
+[node name="Alien33" parent="Enemies" unique_id=1224987023 instance=ExtResource("2_dbls1")]
+position = Vector2(659, 282)
+
+[node name="Alien34" parent="Enemies" unique_id=1451861741 instance=ExtResource("2_dbls1")]
+position = Vector2(753, 282)
+
+[node name="Alien35" parent="Enemies" unique_id=97398455 instance=ExtResource("2_dbls1")]
+position = Vector2(1089, 283)
+
+[node name="Alien36" parent="Enemies" unique_id=1791255455 instance=ExtResource("2_dbls1")]
+position = Vector2(1005, 281)
+
+[node name="Alien37" parent="Enemies" unique_id=514353968 instance=ExtResource("2_dbls1")]
+position = Vector2(139, 368)
+
+[node name="Alien38" parent="Enemies" unique_id=742411781 instance=ExtResource("2_dbls1")]
+position = Vector2(233, 368)
+
+[node name="Alien39" parent="Enemies" unique_id=1647752520 instance=ExtResource("2_dbls1")]
+position = Vector2(311, 368)
+
+[node name="Alien40" parent="Enemies" unique_id=2112941093 instance=ExtResource("2_dbls1")]
+position = Vector2(405, 368)
+
+[node name="Alien41" parent="Enemies" unique_id=1641924139 instance=ExtResource("2_dbls1")]
+position = Vector2(486, 368)
+
+[node name="Alien42" parent="Enemies" unique_id=104316922 instance=ExtResource("2_dbls1")]
+position = Vector2(580, 368)
+
+[node name="Alien43" parent="Enemies" unique_id=1241354210 instance=ExtResource("2_dbls1")]
+position = Vector2(832, 368)
+
+[node name="Alien44" parent="Enemies" unique_id=530982282 instance=ExtResource("2_dbls1")]
+position = Vector2(922, 368)
+
+[node name="Alien45" parent="Enemies" unique_id=1434110681 instance=ExtResource("2_dbls1")]
+position = Vector2(660, 368)
+
+[node name="Alien46" parent="Enemies" unique_id=1343936886 instance=ExtResource("2_dbls1")]
+position = Vector2(754, 368)
+
+[node name="Alien47" parent="Enemies" unique_id=2137611180 instance=ExtResource("2_dbls1")]
+position = Vector2(1086, 366)
+
+[node name="Alien48" parent="Enemies" unique_id=1894431247 instance=ExtResource("2_dbls1")]
+position = Vector2(1006, 367)
+
+[node name="Player" parent="." unique_id=1861969116 instance=ExtResource("3_33cqm")]
+position = Vector2(575, 592)
+
+[node name="Bases" type="Node2D" parent="." unique_id=499411547]
+
+[node name="Base1" parent="Bases" unique_id=702941632 instance=ExtResource("4_xwcet")]
+position = Vector2(84, 537)
+
+[node name="Base2" parent="Bases" unique_id=908507796 instance=ExtResource("4_xwcet")]
+position = Vector2(326, 541)
+
+[node name="Base3" parent="Bases" unique_id=705529046 instance=ExtResource("4_xwcet")]
+position = Vector2(756, 547)
+
+[node name="Base4" parent="Bases" unique_id=1461620675 instance=ExtResource("4_xwcet")]
+position = Vector2(1015, 549)

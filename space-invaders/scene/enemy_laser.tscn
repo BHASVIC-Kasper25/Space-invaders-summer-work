@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://cnjvmat6tlamj"]
+
+[ext_resource type="Script" uid="uid://cf3clo6hhpwy5" path="res://Code/EnemyLaser.cs" id="1_e00he"]
+[ext_resource type="Texture2D" uid="uid://pip0vkxs7cgi" path="res://Assets/enemyLaser.png" id="2_5lvbe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e00he"]
+size = Vector2(2, 2)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5lvbe"]
+size = Vector2(4, 4)
+
+[node name="enemyLaser" type="CharacterBody2D" unique_id=230969763]
+script = ExtResource("1_e00he")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1948837385]
+position = Vector2(0, -1.1920929e-07)
+scale = Vector2(1, 0.1111111)
+texture = ExtResource("2_5lvbe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1893150978]
+shape = SubResource("RectangleShape2D_e00he")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1712210591]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1540959958]
+shape = SubResource("RectangleShape2D_5lvbe")
+
+[connection signal="body_entered" from="Area2D" to="." method="enemyEntered"]

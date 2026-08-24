@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://b0j7rut56dacw"]
+
+[ext_resource type="Script" uid="uid://ocaq10n23xa2" path="res://Code/GameOver.cs" id="1_8uq5u"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_bx6u7"]
+line_spacing = 2.995
+font_size = 144
+
+[node name="Game over" type="Node2D" unique_id=1847832265]
+script = ExtResource("1_8uq5u")
+
+[node name="Label" type="Label" parent="." unique_id=1149996837]
+offset_left = 163.0
+offset_top = 96.0
+offset_right = 989.0
+offset_bottom = 293.0
+text = "GAME OVER"
+label_settings = SubResource("LabelSettings_bx6u7")
+
+[node name="Quit" type="Button" parent="." unique_id=980170976]
+offset_left = 467.0
+offset_top = 482.0
+offset_right = 667.0
+offset_bottom = 584.0
+text = "Quit"
+
+[node name="Play again" type="Button" parent="." unique_id=1833533873]
+offset_left = 464.0
+offset_top = 356.0
+offset_right = 673.0
+offset_bottom = 457.0
+text = "Play Again"
+
+[connection signal="pressed" from="Quit" to="." method="onQuitPressed"]
+[connection signal="pressed" from="Play again" to="." method="onStartPressed"]
