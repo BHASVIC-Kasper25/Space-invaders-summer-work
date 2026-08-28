@@ -4,20 +4,22 @@
 [ext_resource type="Texture2D" uid="uid://b4irp0ry544og" path="res://Assets/playerLaser.png" id="2_rpxpk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rpxpk"]
-size = Vector2(4, 4)
+size = Vector2(3, 22)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7ut5s"]
-size = Vector2(4, 4)
+size = Vector2(4, 24)
 
 [node name="playerLasers" type="CharacterBody2D" unique_id=1198241635]
 script = ExtResource("1_7ut5s")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=485263760]
+position = Vector2(-0.5, 0)
 shape = SubResource("RectangleShape2D_rpxpk")
-debug_color = Color(0.49462038, 0.5554528, 0.5004994, 0.41960785)
+debug_color = Color(0.6800085, 0.5058121, 0, 0.41960785)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1341175809]
-scale = Vector2(1, 0.11111112)
+position = Vector2(-1.1920929e-07, 5.066395e-07)
+scale = Vector2(1.5, 0.72222227)
 texture = ExtResource("2_rpxpk")
 
 [node name="Hitbox" type="Area2D" parent="." unique_id=385922717]

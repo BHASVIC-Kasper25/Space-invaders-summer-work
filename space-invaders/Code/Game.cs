@@ -11,7 +11,7 @@ public partial class Game : Node2D
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-		if(Global.Instance.lives==-1)
+		if(Global.Instance.lives==0)
 		{
 			GetTree().ChangeSceneToFile("res://scene/game_over.tscn");
 		}

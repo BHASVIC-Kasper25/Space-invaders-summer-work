@@ -13,7 +13,7 @@ public partial class PlayerLaser : CharacterBody2D
 	public override void _Process(double delta)
 	{
 		Vector2 direction = new Vector2(0, -1);
-		Velocity = direction.Normalized() * 80;
+		Velocity = direction.Normalized() * 100;
 		MoveAndSlide();
 	}
 

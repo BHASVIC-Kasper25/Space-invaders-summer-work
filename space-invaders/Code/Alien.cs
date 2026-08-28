@@ -78,7 +78,7 @@ public partial class Alien : CharacterBody2D
 		EnemyLaser eLaserTemp = _eLaserScene.Instantiate<EnemyLaser>();
 		eLaserTemp.GlobalPosition =this.GlobalPosition;
 		GetTree().CurrentScene.AddChild(eLaserTemp);
-		eLaserTemp.Position=new Vector2(xCoord-10, yCoord);
+		eLaserTemp.Position=new Vector2(xCoord, yCoord-20);
 		Global.Instance.enemyLaser=Global.Instance.enemyLaser+1;
 
 	}
